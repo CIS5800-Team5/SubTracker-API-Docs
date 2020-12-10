@@ -25,7 +25,7 @@ tags:
 schemes:
 - "https"
 paths:
-  /subscriptions/create?customer_email={customer_email}&service_name={service_name}&subscription_cost={subscription_cost}&subscription_renewal={subscription_renewal}:
+  /subscriptions/create:
     post:
       tags:
       - "Subscriptions"
@@ -62,7 +62,7 @@ paths:
           schema:
             $ref: "#/definitions/ApiResponse"
 
-  /subscriptions/delete?customer_email={customer_email}&subscription_id={subscription_id}:
+  /subscriptions/delete:
     post:
       tags:
       - "Subscriptions"
@@ -89,7 +89,7 @@ paths:
           schema:
             $ref: "#/definitions/ApiResponse"
 
-  /customers/search?customer_email={customer_email}&customer_id={customer_id}:
+  /customers/search:
     get:
       tags:
       - "Customers"
@@ -116,7 +116,7 @@ paths:
           schema:
             $ref: "#/definitions/ApiResponse"
 
-  /customers/getsubscriptions?customer_email={customer_email}:
+  /customers/getsubscriptions:
     get:
       tags:
       - "Customers"
@@ -138,7 +138,7 @@ paths:
           schema:
             $ref: "#/definitions/ApiResponse"
 
-  /customers/create?customer_email={customer_email}:
+  /customers/create:
     post:
       tags:
       - "Customers"
@@ -160,7 +160,7 @@ paths:
           schema:
             $ref: "#/definitions/ApiResponse"
 
-  /services/search?service_name={service_name}&service_id={service_id}:
+  /services/search:
     post:
       tags:
       - "Services"
