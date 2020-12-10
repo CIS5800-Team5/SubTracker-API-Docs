@@ -230,4 +230,4 @@ components:
       name: Ocp-Apim-Subscription-Key
 
 security:
-  - ApiKeyAuth: []
+  - subscription_key: []
