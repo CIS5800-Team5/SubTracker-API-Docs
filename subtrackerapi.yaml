@@ -101,12 +101,12 @@ paths:
       - "application/json"
       parameters:
       - name: "customer_email"
-        in: "formData"
+        in: "path"
         description: "Customer email"
         required: true
         type: "string"
       - name: "customer_id"
-        in: "formData"
+        in: "path"
         description: "Service Name"
         required: false
         type: "string"
