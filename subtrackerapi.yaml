@@ -101,7 +101,7 @@ paths:
       - "application/json"
       parameters:
       - name: "customer_email"
-        in: "path"
+        in: "query"
         description: "Customer email"
         required: true
         type: "string"
