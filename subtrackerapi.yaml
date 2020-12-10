@@ -187,11 +187,6 @@ paths:
           schema:
             $ref: "#/definitions/ApiResponse"
 
-securityDefinitions:
-  api_key:
-    type: "apiKey"
-    name: "Ocp-Apim-Subscription-Key"
-    in: "header"
 definitions:
   ApiResponse:
     type: "object"
@@ -226,3 +221,13 @@ definitions:
 externalDocs:
   description: "Find out more about Subtracker"
   url: "http://subtracker.ml"
+
+components:
+  securitySchemes:
+    subscription_key:
+      type: apiKey
+      in: header
+      name: Ocp-Apim-Subscription-Key
+
+security:
+  - ApiKeyAuth: []
