@@ -20,7 +20,7 @@ tags:
     url: "http://subtracker.ml"
 - name: "Services"
   description: "Services we support"
-- name: "Customer"
+- name: "Customers"
   description: "Information about customers"
 schemes:
 - "https"
@@ -163,7 +163,7 @@ paths:
   /services/search?service_name={service_name}&service_id={service_id}:
     post:
       tags:
-      - "Customers"
+      - "Services"
       summary: "Search for customers"
       description: ""
       consumes:
