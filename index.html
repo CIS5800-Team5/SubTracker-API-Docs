@@ -3,8 +3,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>SubTracker API</title>
+    <title>Swagger UI</title>
     <link rel="stylesheet" type="text/css" href="dist/swagger-ui.css" >
+    <link rel="icon" type="image/png" href="dist/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="dist/favicon-16x16.png" sizes="16x16" />
     <style>
       html
       {
@@ -37,7 +39,7 @@
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "subtrackerapi.yaml",
+        url: "swagger.yaml",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
